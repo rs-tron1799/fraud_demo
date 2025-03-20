@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Bank Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Secure Bank Login</h2>
+        <p>Enter your details to proceed.</p>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button onclick="showScamAlert()">Login</button>
+    </div>
+    <script>
+        function showScamAlert() {
+            alert("🚨 You just got scammed! If this were real, your credentials would be stolen!");
+            document.body.innerHTML = "<h1 style='color: red;'>WARNING: This was a scam demo!</h1><p>FraudSentry can stop such scams before they happen.</p>";
+        }
+    </script>
+</body>
+</html>
