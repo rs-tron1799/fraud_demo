@@ -3,48 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Bank Login</title>
+    <title>Warning: Potential Scam Detected!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #ffeded;
             padding: 50px;
         }
-        .container {
-            max-width: 400px;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        .warning {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
         }
-        input {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
+        .message {
+            font-size: 20px;
+            margin-top: 20px;
         }
-        button {
-            background-color: red;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
+        .fraudsentry {
+            margin-top: 40px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #2a9d8f;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Secure Bank Login</h2>
-        <p>Enter your details to proceed.</p>
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-        <button onclick="showScamAlert()">Login</button>
+    <div class="warning">⚠️ ALERT: You Have Been Targeted by a Scam! ⚠️</div>
+    <div class="message">
+        This QR code led you to a **fake page**, just like real fraudsters do. <br>
+        Imagine if this was your banking app—your money and data could be at risk! 
     </div>
-    <script>
-        function showScamAlert() {
-            alert("🚨 You just got scammed! If this were real, your credentials would be stolen!");
-            document.body.innerHTML = "<h1 style='color: red;'>WARNING: This was a scam demo!</h1><p>FraudSentry can stop such scams before they happen.</p>";
-        }
-    </script>
+    <div class="fraudsentry">
+        🔹 **FraudSentry Protects You!** 🔹 <br>
+        AI-powered fraud detection stops scams **before they happen**. <br>
+        Your transactions are **safe, secure, and fraud-proof!** ✅
+    </div>
 </body>
 </html>
